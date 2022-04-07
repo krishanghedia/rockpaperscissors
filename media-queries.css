@@ -1,0 +1,88 @@
+@media screen and (max-width: 580px) {
+  body {
+    overflow: scroll;
+  }
+
+  header {
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .score_container {
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    flex-direction: row;
+    margin: var(--center-align);
+  }
+
+  span {
+    margin-right: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+
+  h3 {
+    letter-spacing: 0.2rem;
+    width: 100%;
+  }
+
+  #win {
+    margin-top: 2rem;
+  }
+
+  main {
+    column-gap: 8rem;
+  }
+
+  main::after {
+    content: "";
+    background-position-y: 1rem;
+  }
+
+  .score_container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .player-score-container,
+  .comp-score-container {
+    width: 100%;
+  }
+
+  .result-container {
+    margin: 0;
+  }
+
+  #on-selection {
+    flex-direction: column;
+  }
+
+  .btn-circle {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .btn-rock,
+  .btn-scissors,
+  .btn-paper {
+    border-width: 1.5rem;
+  }
+
+  .btn-scissors {
+    margin-top: 2rem;
+  }
+
+  .clear_score {
+    margin-bottom: 1.5rem;
+  }
+
+  .clear_score_button {
+    margin: 2rem 2rem;
+  }
+}

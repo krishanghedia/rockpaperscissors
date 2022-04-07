@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon (2).ico" />
+    <!-- google barlow fonts -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css style sheet -->
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./game-styles.css" />
+    <link rel="stylesheet" type="text/css" href="./utils.css" />
+    <link rel="stylesheet" type="text/css" href="./media-queries.css" />
+    <script src="./index.js" type="module"></script>
+    <script src="./signup.js" type="module"></script>
+    <title>Lets play! Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="navContainer">
+      <nav class="nav">
+        <ul class="navList">
+          <li class="navItem">
+            <a href="./signup.html">Sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <header>
+        <h1>
+          <!-- main title -->
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <!-- scoreboard container -->
+        <div class="score_container">
+          <div class="player-score-container">
+            <h3>Player Score</h3>
+            <p id="score">0</p>
+          </div>
+          <div class="comp-score-container">
+            <h3>Computer Score</h3>
+            <p id="comp-score">0</p>
+          </div>
+        </div>
+      </header>
+      <!-- main game content -->
+      <div class="clear_score">
+        <button id="clear_score_button" class="clear_score_button">
+          Reset game
+        </button>
+      </div>
+      <main id="main">
+        <!-- icon buttons -->
+        <button class="btn-circle btn-rock pick" data-choice="rock">
+          <img src="./icon-rock.svg" alt="dark scissors icon" />
+        </button>
+        <button class="btn-circle btn-paper pick" data-choice="paper">
+          <img src="./icon-paper.svg" alt="dark paper icon" />
+        </button>
+        <button class="btn-circle btn-scissors pick" data-choice="scissors">
+          <img src="./icon-scissors.svg" alt="dark rock icon" />
+        </button>
+      </main>
+    </div>
+    <!-- outside container -->
+    <div id="on-selection">
+      <div class="player-choice-selection">
+        <h2>You Picked</h2>
+        <button class="btn-circle btn-paper" id="user-selection">
+          <img src="./icon-paper.svg" alt="dark paper icon" />
+        </button>
+      </div>
+      <div class="result-container">
+        <h4 id="win">You Win</h4>
+        <button id="btn-reset" class="btn">Play Again</button>
+      </div>
+      <div class="house-choice-selection">
+        <h2>The House Picked</h2>
+        <button class="btn-circle btn-scissors" id="comp-selection">
+          <img src="./icon-scissors.svg" alt="dark rock icon" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

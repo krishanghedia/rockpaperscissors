@@ -1,0 +1,235 @@
+/* root styles */
+:root {
+  --main-black: #000;
+  --main-white: #fff;
+  --main-paper-color: #4865f4;
+  --main-rock-color: #dc2e4e;
+  --main-scissors-color: #ec9e0e;
+  --score-text: hsl(229, 64%, 46%);
+  --dark-text: hsl(229, 25%, 31%);
+  --default-font-size: 1.5rem;
+  --font-size-large: 2.5rem;
+  --border-radius: 5px;
+  --center-align: 0 auto;
+  --main-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+*,
+*::before,
+*::after *:focus {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 10px;
+}
+
+/* REMOVE DEFAULT MARGIN */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* REMOVE LIST STYLES FOR UL AND OL ELEMENTS */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* GENERAL BODY STYLES */
+
+body {
+  line-height: 1;
+  font-family: "Barlow", sans-serif;
+}
+
+/* FLUID AND RESPONSIVE IMAGES */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* INHERIT FONTS FOR BUTTONS AND INPUTS */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background: radial-gradient(
+    circle at 50% 0%,
+    #1f3756,
+    #1d3252,
+    #1a2d4e,
+    #19284a,
+    #172446,
+    #161f42,
+    #151a3d,
+    #141539
+  );
+  color: var(--main-white);
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+/* main content */
+
+/* header styles */
+
+.navContainer {
+  text-align: end;
+}
+
+.navList {
+  padding: 0;
+}
+
+.navItem {
+  list-style: none;
+}
+.navItem a {
+  color: var(--main-white);
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.container {
+  width: 50rem;
+  max-width: 100%;
+  margin: var(--center-align);
+}
+
+header {
+  color: inherit;
+  border: 3px solid hsl(217, 16%, 45%);
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0 5rem 0;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+/* clear score container styles */
+
+.clear_score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.clear_score_button {
+  background-color: var(--main-white);
+  border-radius: 1rem;
+  border-style: none;
+  box-shadow: var(--main-shadow);
+  color: var(--dark-text);
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
+  transition: 0.1s;
+}
+
+#btn-reset {
+  box-shadow: var(--main-shadow);
+}
+
+.clear_score_button:active,
+#btn-reset:active {
+  transform: scale(0.9);
+}
+
+/* score container styles */
+.score_container {
+  background-color: var(--main-white);
+  border-radius: 1rem;
+  box-shadow: var(--main-shadow);
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.player-score-container,
+.comp-score-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 18rem;
+}
+
+.score_container p {
+  color: var(--dark-text);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  /* shadow styles - inset for curve design */
+  box-shadow: inset 0px 5px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+
+.btn-paper,
+.btn-rock,
+.btn-scissors {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.win-container {
+  margin: var(--center-align);
+}
+
+.result-container {
+  margin: var(--center-align);
+  width: 100%;
+}
+
+#on-selection {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80rem;
+  max-width: 100%;
+  margin: var(--center-align);
+}
+
+#on-selection .btn-circle {
+  transform: scale(1.2);
+}

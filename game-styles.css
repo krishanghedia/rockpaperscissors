@@ -1,0 +1,29 @@
+/* main player choice styles */
+
+/* style the triangle background to be position behind the 3 icons */
+main::after {
+  content: "";
+  background-image: url(./bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 3.5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/* triangle styles on the main element */
+
+main {
+  width: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: var(--center-align);
+  /* relative position to anchor the triangle svg */
+  position: relative;
+  column-gap: 5rem;
+}
