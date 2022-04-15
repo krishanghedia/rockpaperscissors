@@ -82,11 +82,11 @@ function findWinner() {
 
   //switch DOM to show the user selection
   // show the selection and hide the main html elements
-  updateOnSelection(userSelection, userChoice);
-  updateOnSelection(compSelection, computerChoice);
+  // updateOnSelection(userSelection, userChoice);
+  // updateOnSelection(compSelection, computerChoice);
 
-  main.style.display = "none";
-  selection.style.display = "flex";
+  // main.style.display = "none";
+  // selection.style.display = "flex";
 
   if (userChoice === computerChoice) {
     resultText.textContent = "Draw";
