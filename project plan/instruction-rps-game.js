@@ -2,11 +2,11 @@
 
 /*
 
-1. create HTML and CSS styling for the game - with or without JS
+1. create HTML and CSS styling for the game
 
 2. using OOP or procedural - 
 
-    - wire up 3 icons to the DOM - get there elements by classname, for the references to the DOM
+    - wire up 3 icons to the DOM - get the elements by classname, for the references to the DOM
 
     - add event listeners to the icons, which listen for a click
 
@@ -17,5 +17,7 @@
         - the scoreboard has the player score and computer score
         - dependant on the winner, increment the score
         - the score should update to the DOM on each turn
+    
+    - AFTER the above, add local storage to save the scores to disk
         
 */

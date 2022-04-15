@@ -13,7 +13,6 @@ const reset = document.getElementById("btn-reset");
 // start the game by using the saved local storage score
 const savedLocalPlayerScore = localStorage.getItem("playerScore");
 const savedLocalCompScore = localStorage.getItem("compScore");
-console.log(savedLocalPlayerScore, savedLocalCompScore);
 
 if (savedLocalPlayerScore && savedLocalCompScore) {
   scoreText.textContent = savedLocalPlayerScore;
@@ -80,14 +79,6 @@ document.addEventListener("keyup", (event) => {
 function findWinner() {
   const computerChoice = getRandomGuess();
 
-  //switch DOM to show the user selection
-  // show the selection and hide the main html elements
-  // updateOnSelection(userSelection, userChoice);
-  // updateOnSelection(compSelection, computerChoice);
-
-  // main.style.display = "none";
-  // selection.style.display = "flex";
-
   if (userChoice === computerChoice) {
     resultText.textContent = "Draw";
   } else if (userChoice === "paper" && computerChoice === "rock") {
@@ -126,7 +117,7 @@ function updateOnSelection(selectEl, choice) {
 
   // change the imagery inside
   const img = selectEl.querySelector("img");
-  img.src = `./icon-${choice}.svg`;
+  img.src = `./images/icon-${choice}.svg`;
   selectEl.classList.add(`btn-${choice}`);
 }
 

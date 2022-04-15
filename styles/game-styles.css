@@ -3,7 +3,7 @@
 /* style the triangle background to be position behind the 3 icons */
 main::after {
   content: "";
-  background-image: url(./bg-triangle.svg);
+  background-image: url(../images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-position-y: 3.5rem;
